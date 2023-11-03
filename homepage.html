@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+<style>
+  .dropbtn {
+    background-color: danger;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    border: none;
+  }
+  
+  .dropdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdwn-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdwn-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdwn-content a:hover {background-color: #ddd;}
+  
+  .dropdwn:hover .dropdwn-content {display: block;}
+  
+  .dropdwn:hover .dropbtn {background-color: rosybrown;}
+ 
+  </style>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <div class="navbar">
+                <img src="img/book.png" height="50" width="50">
+                <h3 class="hub"><strong><i>&nbsp;Book-hub</i></strong></h3>
+              </div>
+
+              <form class="d-flex">
+                <input class="form-control me-2 border border-1 border-primary-subtle" size="100" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline" style="color: white; background-color: cornflowerblue;" type="submit">Search</button>
+              </form>
+              
+                <div class="navbar-nav">
+                  <a class="nav-link  border border-1 border-primary-subtle fw-bold  shadow  text-center ps-3 pe-3 m-2 " data-bs-toggle="modal" style="border-radius: 10px;" aria-current="page"data-bs-target="#staticBackdrop"><img src="img/user.png" style="height: 30px; width: 30px;" alt="">&nbsp;&nbsp;My Account</a>
+                  <a class="nav-link  border border-1 border-primary-subtle fw-bold  shadow  text-center ps-3 pe-3 m-2 " style="border-radius: 10px;" aria-current="page" href="homepage.html"><img src="img/cart.png" style="height: 30px; width: 30px;" alt="">&nbsp;&nbsp;Cart</a>
+                </div>
+              
+              </div>
+            </nav>    
+      </div>
+                  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" style="margin: auto;">My Account</h5>
+       
+      </div>
+      <div class="modal-body">
+       <!--Modal Body Start-->
+
+       <div class="login-wrap">
+        <div class="login-html" style="background-image: url(img/bg3.png);">
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="user" class="label">Username</label>
+                <input id="user" type="text" class="input">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password</label>
+                <input id="pass" type="password" class="input" data-type="password">
+              </div>
+              <div class="group">
+                <input id="check" type="checkbox" class="check" checked>
+                <label for="check"><span class="icon"></span> Keep me Signed in</label>
+              </div>
+              <div class="group">
+                <input type="submit" class="button" value="Sign In">
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk" style="color: white;">
+                <a href="#forgot">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <div class="group">
+                <label for="user" class="label">Username</label>
+                <input id="user" type="text" class="input">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password</label>
+                <input id="pass" type="password" class="input" data-type="password">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Repeat Password</label>
+                <input id="pass" type="password" class="input" data-type="password">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Email Address</label>
+                <input id="pass" type="text" class="input">
+              </div>
+              <div class="group">
+                <input type="submit" class="button" value="Sign Up">
+              </div>
+              <div class="hr"></div>
+             <!-- Foot link cansel -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!--Modal Body Start-->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal End -->
+
+                
+
+    <!-- Navbar Ends -->
+
+    <!-- Category Dropdown Start -->
+    <div class="container-fluid ">
+      <nav class="navbar navbar-expand-lg bg-light border border-1 border-white">
+          <div class="container-fluid border border-1" style="background-color: snow; border-radius: 10px; padding-left: 0;">
+           <div class="dropdwn">
+            <button type="button" class="btn btn-danger dropbtn"  data-bs-toggle=""><img src="img/menu.png" style="height: 30px;" alt="">&nbsp;&nbsp;SHOP BY CATEGORY</button>
+            <ul class="dropdwn-content">
+              <li><a class="dropdwn-item" href="#">Historical</a></li>
+              <li><a class="dropdwn-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+     <!-- Category Dropdown End -->
+
+     <!-- Language Dropdown Start -->
+
+           <div class="dropdwn1">
+            <button type="button" class="btn btn dropbtn" style="color: black; font-size: large; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-expanded;">&nbsp;&nbsp;Marathi <img src="img/down-arrow.png" style="height: 30px;"></button>
+            <ul class="dropdwn1-content">
+              <li><a class="dropdwn1-item" href="#">Historical</a></li>
+              <li><a class="dropdwn1-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn1-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+         
+   
+           <div class="dropdwn1">
+            <button type="button" class="btn btn dropbtn" style="color: black; font-size: large; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-expanded;">&nbsp;&nbsp;Hindi<img src="img/down-arrow.png" style="height: 30px;"></button>           
+             <ul class="dropdwn1-content">
+              <li><a class="dropdwn1-item" href="#">Historical</a></li>
+              <li><a class="dropdwn1-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn1-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+          
+    
+    
+   
+           <div class="dropdwn1">
+            <button type="button" class="btn btn dropbtn" style="color: black; font-size: large; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-expanded;">&nbsp;&nbsp;English<img src="img/down-arrow.png" style="height: 30px;"></button>            
+            <ul class="dropdwn1-content">
+              <li><a class="dropdwn1-item" href="#">Historical</a></li>
+              <li><a class="dropdwn1-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn1-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+          
+   
+
+   
+     
+           <div class="dropdwn1">
+            <button type="button" class="btn btn dropbtn" style="color: black; font-size: large; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-expanded;">&nbsp;&nbsp;Kannad<img src="img/down-arrow.png" style="height: 30px;"></button>            
+            <ul class="dropdwn1-content">
+              <li><a class="dropdwn1-item" href="#">Historical</a></li>
+              <li><a class="dropdwn1-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn1-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+
+
+           <div class="dropdwn1">
+            <button type="button" class="btn btn dropbtn" style="color: black; font-size: large; font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: extra-expanded;">&nbsp;&nbsp;Malyalam<img src="img/down-arrow.png" style="height: 30px;"></button>            
+            <ul class="dropdwn1-content">
+              <li><a class="dropdwn1-item" href="#">Historical</a></li>
+              <li><a class="dropdwn1-item" href="#">Scientific</a></li>
+              <li><a class="dropdwn1-item" href="#">Comics</a></li>
+            </ul>
+           </div>
+    </div>
+  </nav><br><br>
+
+   <!-- Language Dropdown Start --> <!-- Language Dropdown Start --> 
+
+
+   <!--  Carousel Sart -->
+
+   <div id="carouselExampleInterval" class="carousel slide shadow" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img src="img/1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <img src="img/4.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item"  data-bs-interval="3500">
+        <img src="img/2.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br>
+       <!--  Carousel Sart -->
+
+       <!-- images --><!-- images --><!-- images -->
+       
+    
+        <div  class="container-fluid"  style=" display: inline-flex; height: auto;  ">
+         
+        <img  style="width: 100%;" src="img/img2.png" alt="">
+        <img  style="width: 100%;" src="img/img3.png" alt="">
+        <img  style="width: 100%;" src="img/img4.png" alt="">
+      </div>
+
+     
+
+       <!-- card start -->  <!-- card start -->  <!-- card start -->  <!-- card start -->
+      <div class="container-fluid">
+        <div class="border border-1  p-1">
+          <button class="border border-1 border-subtle  text-center ps-2 pe-2 m-2 " style="float: right; color: white; background-color: navy; border-radius: 5px;min-height: 25px;">View All</button>
+        <div style="padding: 5px 5px;"><h4>New Releases</h4><hr></div>
+      <div style="display:flex; margin-bottom: 15px;">
+        <div class="col-sm-3 p-1">
+          <div class="card border border-1 card-color">
+            <div class="card-body">
+              <h3 class="card-title">Shyam ki Maa </h3>
+              <img src="img/book.png" class="img-thumbnail" alt="">
+            <div class="card-text">boAt Nirvana 751 ANC Hybrid Active Noise Cancelling 
+              Bluetooth Wireless Over Ear Headphones with Up to 65H Playtime, 
+              ASAP Charge, Ambient Sound Mode, Immersive Sound, 
+              Carry Pouch(Gunmetal Grey)
+            </div>
+            <div class="card-footer"><span><button class="border-0"><img src="img/cart.png" style="height: 25px;">&nbsp;&nbsp; ₹3,999</button></span></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-sm-3 p-1">
+          <div class="card border border-1 card-color">
+            <div class="card-body">
+              <h3 class="card-title">Shyam ki Maa </h3>
+              <img src="img/book.png" class="img-thumbnail" alt="">
+            <div class="card-text">boAt Nirvana 751 ANC Hybrid Active Noise Cancelling 
+              Bluetooth Wireless Over Ear Headphones with Up to 65H Playtime, 
+              ASAP Charge, Ambient Sound Mode, Immersive Sound, 
+              Carry Pouch(Gunmetal Grey)
+            </div>
+            <div class="card-footer"><span><button class="border-0"><img src="img/cart.png" style="height: 25px;">&nbsp;&nbsp; ₹3,999</button></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 p-1">
+          <div class="card border border-1 card-color">
+            <div class="card-body">
+              <h3 class="card-title">Shyam ki Maa </h3>
+              <img src="img/book.png" class="img-thumbnail" alt="">
+            <div class="card-text">boAt Nirvana 751 ANC Hybrid Active Noise Cancelling 
+              Bluetooth Wireless Over Ear Headphones with Up to 65H Playtime, 
+              ASAP Charge, Ambient Sound Mode, Immersive Sound, 
+              Carry Pouch(Gunmetal Grey)
+            </div>
+            <div class="card-footer"><span><button class="border-0"><img src="img/cart.png" style="height: 25px;">&nbsp;&nbsp; ₹3,999</button></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 p-1">
+          <div class="card border border-1 card-color">
+            <div class="card-body">
+              <h3 class="card-title">Shyam ki Maa </h3>
+              <img src="img/book.png" class="img-thumbnail" alt="">
+            <div class="card-text">boAt Nirvana 751 ANC Hybrid Active Noise Cancelling 
+              Bluetooth Wireless Over Ear Headphones with Up to 65H Playtime, 
+              ASAP Charge, Ambient Sound Mode, Immersive Sound, 
+              Carry Pouch(Gunmetal Grey)
+            </div>
+            <div class="card-footer"><span><button class="border-0"><img src="img/cart.png" style="height: 25px;">&nbsp;&nbsp; ₹3,999</button></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+       
+
+        <!-- card End --> <!-- card End --> <!-- card End --> <!-- card End -->
+
+       
+
+</body>
+</html>
